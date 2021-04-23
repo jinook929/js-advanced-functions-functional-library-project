@@ -6,11 +6,33 @@
     <title>fi JS Functional Library</title>
     <meta name="description" content="Functional JavaScript Lab in Learn.co Curriculum">
     <meta name="author" content="Flatiron School">
-
+    <script src="index.js" defer></script>
     <link rel="stylesheet" href="node_modules/mocha/mocha.css">
   </head>
 
   <body>
     
   </body>
+
+  <!-- <script>
+    const flat = function(collection, shallow, newArr=[]) {
+      if (shallow) {
+        for (let val of collection)
+          if(Array.isArray(val)) {
+            for(let v of val) newArr.push(v)
+          } else {
+            newArr.push(val)
+          }
+      } else {
+        for (let val of collection) {
+          console.log(this)
+          this(val, false, newArr)
+        }
+      }
+      return newArr
+    }
+
+    const f = flat.bind(flat)
+    console.log("from script", f([1,[2,3],4]))
+  </script> -->
 </html>
